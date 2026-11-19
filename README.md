@@ -1,5 +1,5 @@
 ```zsh
-> neofetch
+> Hi, here is metavi
 ```
 
 <img align="left" src="assets/cover.jpg" width="36%" alt="Ayanami Rei">
