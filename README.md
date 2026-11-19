@@ -7,10 +7,10 @@
 <pre><strong>metavixie@gmail.com</strong>
 ──────────────────
 School  Zhejiang Normal University
-Focus   CTF · Misc
+Focus   CTF · Misc · Penetration
 Tools   Python · Java · Godot 
 Blog    <a href="https://metaviii.github.io/">https://metaviii.github.io/</a>
-Notes   <a href="https://metaviii.github.io/2024/11/Misc-Ultra/">Misc Ultra</a>
+Notes   <a href="https://metaviii.github.io/2026/01/2025年终总结/">2025 Summary</a>
 Hobby   Music, Anime, Philosophy</pre>
 
 <p><img src="assets/palette.svg" width="128" height="18" alt="封面取色"></p>
