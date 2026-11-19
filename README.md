@@ -15,7 +15,8 @@ Hobby   Music, Game, Philosophy</pre>
 
 <p><img src="assets/palette.svg" width="128" height="18" alt="封面取色"></p>
 
-<br>
+<br><br><br>
+
 
 <p align="left">
   <img src="assets/badge-python.svg" alt="Python" height="20">
