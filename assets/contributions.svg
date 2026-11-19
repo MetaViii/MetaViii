@@ -1,8 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="690" height="92" viewBox="0 0 690 92" role="img" aria-labelledby="title desc">
-<title id="title">MetaViii 的贡献图贪吃蛇</title>
-<desc id="desc">从 2025-11-20 到 2026-11-19 的公开贡献日历，贪吃蛇依次吃掉 29 个有贡献的格子。</desc>
+<title id="title">MetaViii contribution snake</title>
+<desc id="desc">Public contribution calendar from 2025-11-20 to 2026-11-19. The snake eats all 29 cells with contributions.</desc>
 <style>.l0{fill:#e9eff1}.l1{fill:#b8e3e3}.l2{fill:#79c8cf}.l3{fill:#3b9fae}.l4{fill:#16738c}.snake{fill:#06687b}@media(prefers-color-scheme:dark){.l0{fill:#1e3037}.l1{fill:#204954}.l2{fill:#286b78}.l3{fill:#3493a2}.l4{fill:#68bfcc}.snake{fill:#a1e3e6}}@media(prefers-reduced-motion:reduce){.motion{display:none}}</style>
-<defs><clipPath id="bounds"><rect width="100%" height="100%"/></clipPath></defs><g clip-path="url(#bounds)">
+<defs><clipPath id="bounds"><rect width="100%" height="100%"/></clipPath></defs>
+<g clip-path="url(#bounds)">
 <rect x="2" y="54" width="10" height="10" rx="2.6" class="l0"><title>2025-11-20</title></rect>
 <rect x="2" y="67" width="10" height="10" rx="2.6" class="l0"><title>2025-11-21</title></rect>
 <rect x="2" y="80" width="10" height="10" rx="2.6" class="l0"><title>2025-11-22</title></rect>
@@ -14,18 +15,18 @@
 <rect x="15" y="67" width="10" height="10" rx="2.6" class="l0"><title>2025-11-28</title></rect>
 <rect x="15" y="80" width="10" height="10" rx="2.6" class="l0"><title>2025-11-29</title></rect>
 <rect x="28" y="2" width="10" height="10" rx="2.6" class="l0"><title>2025-11-30</title></rect>
-<rect x="28" y="15" width="10" height="10" rx="2.6" class="l3"><title>2025-12-01</title></rect>
+<rect x="28" y="15" width="10" height="10" rx="2.6" class="l4"><title>2025-12-01</title></rect>
 <rect x="28" y="15" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.096000;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="28" y="28" width="10" height="10" rx="2.6" class="l1"><title>2025-12-02</title></rect>
 <rect x="28" y="28" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.088308;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
-<rect x="28" y="41" width="10" height="10" rx="2.6" class="l1"><title>2025-12-03</title></rect>
+<rect x="28" y="41" width="10" height="10" rx="2.6" class="l2"><title>2025-12-03</title></rect>
 <rect x="28" y="41" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.019077;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="28" y="54" width="10" height="10" rx="2.6" class="l1"><title>2025-12-04</title></rect>
 <rect x="28" y="54" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.026769;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="28" y="67" width="10" height="10" rx="2.6" class="l0"><title>2025-12-05</title></rect>
-<rect x="28" y="80" width="10" height="10" rx="2.6" class="l1"><title>2025-12-06</title></rect>
+<rect x="28" y="80" width="10" height="10" rx="2.6" class="l2"><title>2025-12-06</title></rect>
 <rect x="28" y="80" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.042154;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
-<rect x="41" y="2" width="10" height="10" rx="2.6" class="l1"><title>2025-12-07</title></rect>
+<rect x="41" y="2" width="10" height="10" rx="2.6" class="l3"><title>2025-12-07</title></rect>
 <rect x="41" y="2" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.111385;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="41" y="15" width="10" height="10" rx="2.6" class="l0"><title>2025-12-08</title></rect>
 <rect x="41" y="28" width="10" height="10" rx="2.6" class="l0"><title>2025-12-09</title></rect>
@@ -33,7 +34,7 @@
 <rect x="41" y="54" width="10" height="10" rx="2.6" class="l0"><title>2025-12-11</title></rect>
 <rect x="41" y="67" width="10" height="10" rx="2.6" class="l0"><title>2025-12-12</title></rect>
 <rect x="41" y="80" width="10" height="10" rx="2.6" class="l0"><title>2025-12-13</title></rect>
-<rect x="54" y="2" width="10" height="10" rx="2.6" class="l1"><title>2025-12-14</title></rect>
+<rect x="54" y="2" width="10" height="10" rx="2.6" class="l2"><title>2025-12-14</title></rect>
 <rect x="54" y="2" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.119077;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="54" y="15" width="10" height="10" rx="2.6" class="l0"><title>2025-12-15</title></rect>
 <rect x="54" y="28" width="10" height="10" rx="2.6" class="l0"><title>2025-12-16</title></rect>
@@ -82,7 +83,7 @@
 <rect x="132" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-01-27</title></rect>
 <rect x="132" y="41" width="10" height="10" rx="2.6" class="l0"><title>2026-01-28</title></rect>
 <rect x="132" y="54" width="10" height="10" rx="2.6" class="l0"><title>2026-01-29</title></rect>
-<rect x="132" y="67" width="10" height="10" rx="2.6" class="l2"><title>2026-01-30</title></rect>
+<rect x="132" y="67" width="10" height="10" rx="2.6" class="l1"><title>2026-01-30</title></rect>
 <rect x="132" y="67" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.249846;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="132" y="80" width="10" height="10" rx="2.6" class="l0"><title>2026-01-31</title></rect>
 <rect x="145" y="2" width="10" height="10" rx="2.6" class="l0"><title>2026-02-01</title></rect>
@@ -91,12 +92,12 @@
 <rect x="145" y="41" width="10" height="10" rx="2.6" class="l0"><title>2026-02-04</title></rect>
 <rect x="145" y="54" width="10" height="10" rx="2.6" class="l0"><title>2026-02-05</title></rect>
 <rect x="145" y="67" width="10" height="10" rx="2.6" class="l0"><title>2026-02-06</title></rect>
-<rect x="145" y="80" width="10" height="10" rx="2.6" class="l2"><title>2026-02-07</title></rect>
+<rect x="145" y="80" width="10" height="10" rx="2.6" class="l1"><title>2026-02-07</title></rect>
 <rect x="145" y="80" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.234462;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="158" y="2" width="10" height="10" rx="2.6" class="l0"><title>2026-02-08</title></rect>
 <rect x="158" y="15" width="10" height="10" rx="2.6" class="l0"><title>2026-02-09</title></rect>
 <rect x="158" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-02-10</title></rect>
-<rect x="158" y="41" width="10" height="10" rx="2.6" class="l3"><title>2026-02-11</title></rect>
+<rect x="158" y="41" width="10" height="10" rx="2.6" class="l2"><title>2026-02-11</title></rect>
 <rect x="158" y="41" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.203692;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="158" y="54" width="10" height="10" rx="2.6" class="l0"><title>2026-02-12</title></rect>
 <rect x="158" y="67" width="10" height="10" rx="2.6" class="l0"><title>2026-02-13</title></rect>
@@ -129,7 +130,7 @@
 <rect x="210" y="54" width="10" height="10" rx="2.6" class="l0"><title>2026-03-12</title></rect>
 <rect x="210" y="67" width="10" height="10" rx="2.6" class="l0"><title>2026-03-13</title></rect>
 <rect x="210" y="80" width="10" height="10" rx="2.6" class="l0"><title>2026-03-14</title></rect>
-<rect x="223" y="2" width="10" height="10" rx="2.6" class="l4"><title>2026-03-15</title></rect>
+<rect x="223" y="2" width="10" height="10" rx="2.6" class="l3"><title>2026-03-15</title></rect>
 <rect x="223" y="2" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.342154;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="223" y="15" width="10" height="10" rx="2.6" class="l0"><title>2026-03-16</title></rect>
 <rect x="223" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-03-17</title></rect>
@@ -166,7 +167,7 @@
 <rect x="275" y="67" width="10" height="10" rx="2.6" class="l0"><title>2026-04-17</title></rect>
 <rect x="275" y="80" width="10" height="10" rx="2.6" class="l0"><title>2026-04-18</title></rect>
 <rect x="288" y="2" width="10" height="10" rx="2.6" class="l0"><title>2026-04-19</title></rect>
-<rect x="288" y="15" width="10" height="10" rx="2.6" class="l3"><title>2026-04-20</title></rect>
+<rect x="288" y="15" width="10" height="10" rx="2.6" class="l2"><title>2026-04-20</title></rect>
 <rect x="288" y="15" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.388308;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="288" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-04-21</title></rect>
 <rect x="288" y="41" width="10" height="10" rx="2.6" class="l0"><title>2026-04-22</title></rect>
@@ -206,7 +207,7 @@
 <rect x="353" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-05-26</title></rect>
 <rect x="353" y="41" width="10" height="10" rx="2.6" class="l0"><title>2026-05-27</title></rect>
 <rect x="353" y="54" width="10" height="10" rx="2.6" class="l0"><title>2026-05-28</title></rect>
-<rect x="353" y="67" width="10" height="10" rx="2.6" class="l2"><title>2026-05-29</title></rect>
+<rect x="353" y="67" width="10" height="10" rx="2.6" class="l1"><title>2026-05-29</title></rect>
 <rect x="353" y="67" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.457538;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="353" y="80" width="10" height="10" rx="2.6" class="l0"><title>2026-05-30</title></rect>
 <rect x="366" y="2" width="10" height="10" rx="2.6" class="l0"><title>2026-05-31</title></rect>
@@ -273,7 +274,7 @@
 <rect x="470" y="67" width="10" height="10" rx="2.6" class="l0"><title>2026-07-31</title></rect>
 <rect x="470" y="80" width="10" height="10" rx="2.6" class="l0"><title>2026-08-01</title></rect>
 <rect x="483" y="2" width="10" height="10" rx="2.6" class="l0"><title>2026-08-02</title></rect>
-<rect x="483" y="15" width="10" height="10" rx="2.6" class="l2"><title>2026-08-03</title></rect>
+<rect x="483" y="15" width="10" height="10" rx="2.6" class="l1"><title>2026-08-03</title></rect>
 <rect x="483" y="15" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.611385;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="483" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-08-04</title></rect>
 <rect x="483" y="41" width="10" height="10" rx="2.6" class="l0"><title>2026-08-05</title></rect>
@@ -286,12 +287,12 @@
 <rect x="496" y="41" width="10" height="10" rx="2.6" class="l0"><title>2026-08-12</title></rect>
 <rect x="496" y="54" width="10" height="10" rx="2.6" class="l0"><title>2026-08-13</title></rect>
 <rect x="496" y="67" width="10" height="10" rx="2.6" class="l0"><title>2026-08-14</title></rect>
-<rect x="496" y="80" width="10" height="10" rx="2.6" class="l2"><title>2026-08-15</title></rect>
+<rect x="496" y="80" width="10" height="10" rx="2.6" class="l1"><title>2026-08-15</title></rect>
 <rect x="496" y="80" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.549846;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="509" y="2" width="10" height="10" rx="2.6" class="l0"><title>2026-08-16</title></rect>
 <rect x="509" y="15" width="10" height="10" rx="2.6" class="l0"><title>2026-08-17</title></rect>
 <rect x="509" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-08-18</title></rect>
-<rect x="509" y="41" width="10" height="10" rx="2.6" class="l2"><title>2026-08-19</title></rect>
+<rect x="509" y="41" width="10" height="10" rx="2.6" class="l1"><title>2026-08-19</title></rect>
 <rect x="509" y="41" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.580615;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="509" y="54" width="10" height="10" rx="2.6" class="l0"><title>2026-08-20</title></rect>
 <rect x="509" y="67" width="10" height="10" rx="2.6" class="l0"><title>2026-08-21</title></rect>
@@ -330,7 +331,7 @@
 <rect x="574" y="41" width="10" height="10" rx="2.6" class="l0"><title>2026-09-23</title></rect>
 <rect x="574" y="54" width="10" height="10" rx="2.6" class="l4"><title>2026-09-24</title></rect>
 <rect x="574" y="54" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.749846;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
-<rect x="574" y="67" width="10" height="10" rx="2.6" class="l3"><title>2026-09-25</title></rect>
+<rect x="574" y="67" width="10" height="10" rx="2.6" class="l2"><title>2026-09-25</title></rect>
 <rect x="574" y="67" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.757538;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="574" y="80" width="10" height="10" rx="2.6" class="l0"><title>2026-09-26</title></rect>
 <rect x="587" y="2" width="10" height="10" rx="2.6" class="l4"><title>2026-09-27</title></rect>
@@ -341,20 +342,20 @@
 <rect x="587" y="54" width="10" height="10" rx="2.6" class="l0"><title>2026-10-01</title></rect>
 <rect x="587" y="67" width="10" height="10" rx="2.6" class="l0"><title>2026-10-02</title></rect>
 <rect x="587" y="80" width="10" height="10" rx="2.6" class="l0"><title>2026-10-03</title></rect>
-<rect x="600" y="2" width="10" height="10" rx="2.6" class="l2"><title>2026-10-04</title></rect>
+<rect x="600" y="2" width="10" height="10" rx="2.6" class="l1"><title>2026-10-04</title></rect>
 <rect x="600" y="2" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.688308;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="600" y="15" width="10" height="10" rx="2.6" class="l0"><title>2026-10-05</title></rect>
 <rect x="600" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-10-06</title></rect>
 <rect x="600" y="41" width="10" height="10" rx="2.6" class="l0"><title>2026-10-07</title></rect>
-<rect x="600" y="54" width="10" height="10" rx="2.6" class="l3"><title>2026-10-08</title></rect>
+<rect x="600" y="54" width="10" height="10" rx="2.6" class="l2"><title>2026-10-08</title></rect>
 <rect x="600" y="54" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.734462;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="600" y="67" width="10" height="10" rx="2.6" class="l0"><title>2026-10-09</title></rect>
 <rect x="600" y="80" width="10" height="10" rx="2.6" class="l0"><title>2026-10-10</title></rect>
 <rect x="613" y="2" width="10" height="10" rx="2.6" class="l0"><title>2026-10-11</title></rect>
-<rect x="613" y="15" width="10" height="10" rx="2.6" class="l2"><title>2026-10-12</title></rect>
+<rect x="613" y="15" width="10" height="10" rx="2.6" class="l1"><title>2026-10-12</title></rect>
 <rect x="613" y="15" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.703692;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="613" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-10-13</title></rect>
-<rect x="613" y="41" width="10" height="10" rx="2.6" class="l2"><title>2026-10-14</title></rect>
+<rect x="613" y="41" width="10" height="10" rx="2.6" class="l1"><title>2026-10-14</title></rect>
 <rect x="613" y="41" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.719077;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="613" y="54" width="10" height="10" rx="2.6" class="l0"><title>2026-10-15</title></rect>
 <rect x="613" y="67" width="10" height="10" rx="2.6" class="l0"><title>2026-10-16</title></rect>
@@ -377,15 +378,15 @@
 <rect x="652" y="15" width="10" height="10" rx="2.6" class="l0"><title>2026-11-02</title></rect>
 <rect x="652" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-11-03</title></rect>
 <rect x="652" y="41" width="10" height="10" rx="2.6" class="l0"><title>2026-11-04</title></rect>
-<rect x="652" y="54" width="10" height="10" rx="2.6" class="l3"><title>2026-11-05</title></rect>
+<rect x="652" y="54" width="10" height="10" rx="2.6" class="l2"><title>2026-11-05</title></rect>
 <rect x="652" y="54" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.811385;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
-<rect x="652" y="67" width="10" height="10" rx="2.6" class="l3"><title>2026-11-06</title></rect>
+<rect x="652" y="67" width="10" height="10" rx="2.6" class="l2"><title>2026-11-06</title></rect>
 <rect x="652" y="67" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.803692;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="652" y="80" width="10" height="10" rx="2.6" class="l0"><title>2026-11-07</title></rect>
 <rect x="665" y="2" width="10" height="10" rx="2.6" class="l0"><title>2026-11-08</title></rect>
 <rect x="665" y="15" width="10" height="10" rx="2.6" class="l0"><title>2026-11-09</title></rect>
 <rect x="665" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-11-10</title></rect>
-<rect x="665" y="41" width="10" height="10" rx="2.6" class="l2"><title>2026-11-11</title></rect>
+<rect x="665" y="41" width="10" height="10" rx="2.6" class="l1"><title>2026-11-11</title></rect>
 <rect x="665" y="41" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.842154;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <rect x="665" y="54" width="10" height="10" rx="2.6" class="l0"><title>2026-11-12</title></rect>
 <rect x="665" y="67" width="10" height="10" rx="2.6" class="l0"><title>2026-11-13</title></rect>
@@ -393,9 +394,9 @@
 <rect x="678" y="2" width="10" height="10" rx="2.6" class="l0"><title>2026-11-15</title></rect>
 <rect x="678" y="15" width="10" height="10" rx="2.6" class="l0"><title>2026-11-16</title></rect>
 <rect x="678" y="28" width="10" height="10" rx="2.6" class="l0"><title>2026-11-17</title></rect>
-<rect x="678" y="41" width="10" height="10" rx="2.6" class="l2"><title>2026-11-18</title></rect>
+<rect x="678" y="41" width="10" height="10" rx="2.6" class="l1"><title>2026-11-18</title></rect>
 <rect x="678" y="41" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.834462;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
-<rect x="678" y="54" width="10" height="10" rx="2.6" class="l2"><title>2026-11-19</title></rect>
+<rect x="678" y="54" width="10" height="10" rx="2.6" class="l4"><title>2026-11-19</title></rect>
 <rect x="678" y="54" width="10" height="10" rx="2.6" class="l0 motion" opacity="0"><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.826769;0.97;1" calcMode="discrete" dur="16.25s" repeatCount="indefinite"/></rect>
 <g class="motion" transform="translate(-37 41)"><animateTransform attributeName="transform" type="translate" values="-37 41;-24 41;-11 41;2 41;15 41;28 41;28 54;28 67;28 80;41 80;41 67;41 54;41 41;41 28;28 28;28 15;41 15;41 2;54 2;67 2;80 2;93 2;106 2;119 2;132 2;145 2;158 2;158 15;158 28;158 41;158 54;158 67;158 80;145 80;145 67;132 67;132 54;145 54;158 54;171 54;184 54;197 54;210 54;223 54;223 41;223 28;223 15;223 2;236 2;249 2;262 2;275 2;288 2;288 15;301 15;314 15;327 15;340 15;353 15;353 28;353 41;353 54;353 67;366 67;379 67;392 67;405 67;418 67;431 67;444 67;457 67;470 67;483 67;496 67;496 80;509 80;509 67;509 54;509 41;509 28;509 15;496 15;483 15;483 2;496 2;509 2;522 2;535 2;548 2;561 2;574 2;587 2;600 2;613 2;613 15;613 28;613 41;613 54;600 54;587 54;574 54;574 67;587 67;600 67;613 67;626 67;639 67;652 67;652 54;665 54;678 54;678 41;665 41;665 28;678 28;691 28;704 28;717 28;730 28;743 28;756 28;756 41;756 41;756 41;756 41;756 41;756 41;756 41;756 41;756 41;756 41" dur="16.25s" repeatCount="indefinite"/><rect class="snake" x="0.35" y="0.35" width="9.30" height="9.30" rx="3.6" opacity="0.73"/>
 </g>
