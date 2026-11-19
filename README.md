@@ -11,6 +11,7 @@ Focus   CTF · Misc
 Tools   Python · Godot
 Blog    <a href="https://metaviii.github.io/">个人博客</a>
 Notes   <a href="https://metaviii.github.io/2024/11/Misc-Ultra/">Misc Ultra</a></pre>
+Hobby   Music, Game, Philosophy
 
 <p><img src="assets/palette.svg" width="128" height="18" alt="封面取色，由深蓝过渡到浅青"></p>
 
