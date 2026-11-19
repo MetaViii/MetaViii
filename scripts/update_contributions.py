@@ -114,7 +114,8 @@ def render(days):
         f'<desc id="desc">Public contribution calendar from {first} to {last}. '
         f'The snake eats all {len(foods)} cells with contributions.</desc>',
         f'<style>{light}@media(prefers-color-scheme:dark){{{dark}}}'
-        '@media(prefers-reduced-motion:reduce){.motion{display:none}}</style>',
+        '.still{display:none}@media(prefers-reduced-motion:reduce){'
+        '.motion{display:none}.still{display:inline}}</style>',
         '<defs><clipPath id="bounds"><rect width="100%" height="100%"/></clipPath></defs>',
         '<g clip-path="url(#bounds)">',
     ]
@@ -144,6 +145,12 @@ def render(days):
             svg.append('<g fill="#fff"><circle cx="3" cy="3.6" r="0.8"/>'
                        '<circle cx="7" cy="3.6" r="0.8"/></g>')
         svg.append('</g>')
+    # Keep the snake recognizable without motion, above the unchanged contribution cells.
+    x, y = xy((cols // 2 - 3, 3))
+    svg.append(f'<g class="still" transform="translate({x} {y})">'
+               f'<rect class="snake" width="{3 * step + square}" height="{square}" rx="4"/>'
+               f'<g fill="#fff"><circle cx="{3 * step + 6}" cy="3" r="1.1"/>'
+               f'<circle cx="{3 * step + 6}" cy="7" r="1.1"/></g></g>')
     svg.append('</g></svg>')
     return "\n".join(svg) + "\n"
 
