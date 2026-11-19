@@ -3,13 +3,20 @@
 from collections import deque
 from datetime import date, datetime, timedelta, timezone
 from html.parser import HTMLParser
+from io import BytesIO
 from pathlib import Path
 from urllib.request import Request, urlopen
 
 
+from PIL import Image, ImageDraw
+
+
 USERNAME = "MetaViii"
-OUTPUT = Path(__file__).resolve().parents[1] / "assets" / "contributions.svg"
+ASSETS = Path(__file__).resolve().parents[1] / "assets"
 DAY = timedelta(days=1)
+STEP, SQUARE = 13, 10
+LIGHT = ("#e9eff1", "#b8e3e3", "#79c8cf", "#3b9fae", "#16738c", "#06687b")
+DARK = ("#1e3037", "#204954", "#286b78", "#3493a2", "#68bfcc", "#a1e3e6")
 
 
 class ContributionCalendar(HTMLParser):
@@ -87,26 +94,32 @@ def snake_track(foods, cols):
     return track, eaten
 
 
-def render(days):
+def layout(days):
     first, last = min(days), max(days)
     origin = first - ((first.weekday() + 1) % 7) * DAY
     cols = (last - origin).days // 7 + 1
     calendar = {divmod((day - origin).days, 7): (day, level) for day, level in days.items()}
+    return cols, calendar
+
+
+def xy(pos):
+    return (2 + pos[0] * STEP, 2 + pos[1] * STEP)
+
+
+def render(days):
+    first, last = min(days), max(days)
+    cols, calendar = layout(days)
     foods = {pos for pos, (_, level) in calendar.items() if level}
     track, eaten = snake_track(foods, cols)
-    step, square = 13, 10
+    step, square = STEP, SQUARE
     width, height = cols * step + 1, 7 * step + 1
     total = len(track) + 11
     duration = round(total * 0.125, 3)
 
-    def xy(pos):
-        return (2 + pos[0] * step, 2 + pos[1] * step)
+    def paint(colors):
+        return "".join(f".l{i}{{fill:{color}}}" for i, color in enumerate(colors[:-1])) + f".snake{{fill:{colors[-1]}}}"
 
-    def paint(palette, snake):
-        return "".join(f".l{i}{{fill:{color}}}" for i, color in enumerate(palette)) + f".snake{{fill:{snake}}}"
-
-    light = paint(["#e9eff1", "#b8e3e3", "#79c8cf", "#3b9fae", "#16738c"], "#06687b")
-    dark = paint(["#1e3037", "#204954", "#286b78", "#3493a2", "#68bfcc"], "#a1e3e6")
+    light, dark = paint(LIGHT), paint(DARK)
     svg = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
@@ -155,6 +168,46 @@ def render(days):
     return "\n".join(svg) + "\n"
 
 
+def gif_frames(cols, calendar, track, eaten, colors):
+    size = (cols * STEP + 1, 7 * STEP + 1)
+    grid = Image.new("P", size)
+    grid.putpalette(bytes.fromhex("000000" + "".join(c[1:] for c in colors) + "ffffff"))
+    draw = ImageDraw.Draw(grid)
+
+    def cell(draw, pos, index):
+        x, y = xy(pos)
+        draw.rounded_rectangle((x, y, x + SQUARE - 1, y + SQUARE - 1), radius=2, fill=index)
+
+    for pos, (_, level) in calendar.items():
+        cell(draw, pos, level + 1)
+
+    meals = {i: pos for pos, i in eaten.items()}
+    history = [(-3, 3), (-2, 3), (-1, 3)] + track
+    for i, head in enumerate(track):
+        if i in meals:
+            cell(draw, meals[i], 1)
+        frame = grid.copy()
+        body_draw = ImageDraw.Draw(frame)
+        for offset in (3, 2, 1, 0):
+            x, y = xy(history[i + 3 - offset])
+            inset = int(offset >= 2)
+            body_draw.rounded_rectangle((x + inset, y + inset, x + SQUARE - 1 - inset,
+                                         y + SQUARE - 1 - inset), radius=3, fill=6)
+        x, y = xy(head)
+        body_draw.point([(x + 3, y + 3), (x + 6, y + 3)], fill=7)
+        yield frame
+
+
+def render_gif(cols, calendar, track, eaten, colors):
+    first, *frames = gif_frames(cols, calendar, track, eaten, colors)
+    buffer = BytesIO()
+    # The final frame holds the cleared board before the loop starts again.
+    durations = [100] * (len(track) - 1) + [650]
+    first.save(buffer, format="GIF", save_all=True, append_images=frames, duration=durations,
+               loop=0, transparency=0, disposal=2, optimize=False)
+    return buffer.getvalue()
+
+
 def main():
     request = Request(
         f"https://github.com/users/{USERNAME}/contributions",
@@ -163,7 +216,15 @@ def main():
     with urlopen(request, timeout=30) as response:
         html = response.read().decode("utf-8")
     days = recent_days(html, datetime.now(timezone.utc).date())
-    OUTPUT.write_bytes(render(days).encode("utf-8"))
+    cols, calendar = layout(days)
+    track, eaten = snake_track({pos for pos, (_, level) in calendar.items() if level}, cols)
+    outputs = {
+        "contributions.svg": render(days).encode("utf-8"),
+        "contributions-dark.gif": render_gif(cols, calendar, track, eaten, DARK),
+        "contributions.gif": render_gif(cols, calendar, track, eaten, LIGHT),
+    }
+    for name, data in outputs.items():
+        (ASSETS / name).write_bytes(data)
     print(f"Rendered {len(days)} days: {min(days)} to {max(days)}")
 
 
