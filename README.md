@@ -2,18 +2,18 @@
 > Hi, here is metavi
 ```
 
-<img align="left" src="assets/cover.jpg" width="23%" alt="Ayanami Rei">
+<img align="left" src="assets/cover.jpg" width="30%" alt="Ayanami Rei">
 
-<p><samp><strong>metavixie@gmail.com</strong><br>
-──────────────────<br>
-School&nbsp; Zhejiang Normal University<br>
-Focus&nbsp;&nbsp; CTF · Misc<br>
-Tools&nbsp;&nbsp; Python · Godot<br>
-Blog&nbsp;&nbsp;&nbsp; <a href="https://metaviii.github.io/">个人博客</a><br>
-Notes&nbsp;&nbsp; <a href="https://metaviii.github.io/2024/11/Misc-Ultra/">Misc Ultra</a><br>
-Hobby&nbsp;&nbsp; Music, Game, Philosophy</samp></p>
+<pre><strong>metavixie@gmail.com</strong>
+──────────────────
+School  Zhejiang Normal University
+Focus   CTF · Misc
+Tools   Python · Godot
+Blog    <a href="https://metaviii.github.io/">个人博客</a>
+Notes   <a href="https://metaviii.github.io/2024/11/Misc-Ultra/">Misc Ultra</a>
+Hobby   Music, Game, Philosophy</pre>
 
-<p><img src="assets/palette.svg" width="128" height="18" alt="封面取色，由深蓝过渡到浅青"></p>
+<p><img src="assets/palette.svg" width="128" height="18" alt="封面取色"></p>
 
 <br clear="all">
 
