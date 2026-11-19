@@ -28,7 +28,7 @@ Hobby   Music, Game, Philosophy</pre>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/contributions-dark.gif">
-    <img src="assets/contributions.gif" width="100%" alt="贪吃蛇沿着 MetaViii 最近一年的 GitHub 贡献格游动">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/github-snake-dark.svg">
+    <img src="assets/github-snake.svg" alt="贪吃蛇沿着 MetaViii 最近一年的 GitHub 贡献格游动">
   </picture>
 </p>
