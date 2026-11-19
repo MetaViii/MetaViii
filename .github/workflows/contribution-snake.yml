@@ -1,0 +1,32 @@
+name: Update contribution snake
+
+on:
+  schedule:
+    - cron: '27 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-snake
+
+jobs:
+  update:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+      - name: Render public contribution calendar
+        run: python3 scripts/update_contributions.py
+      - name: Publish changes
+        run: |
+          git add -- assets/contributions.svg
+          if git diff --cached --quiet -- assets/contributions.svg; then
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' \
+            -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m 'Update contribution snake'
+          git push origin HEAD:refs/heads/main
