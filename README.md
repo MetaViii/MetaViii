@@ -2,14 +2,13 @@
 > neofetch
 ```
 
-<img align="left" src="assets/cover.jpg" width="36%" alt="海蓝色的水下插画，左下角印着 Nirvana / Nevermind">
+<img align="left" src="assets/cover.jpg" width="36%" alt="Ayanami Rei">
 
-<pre><strong>MetaVi@github</strong>
+<pre><strong>metavixie@gmail.com</strong>
 ──────────────────
-School  浙江师范大学
+School  Zhejiang Normal University
 Focus   CTF · Misc
 Tools   Python · Godot
-Game    <a href="https://github.com/MetaViii/little-hunter">Little Hunter</a>
 Blog    <a href="https://metaviii.github.io/">个人博客</a>
 Notes   <a href="https://metaviii.github.io/2024/11/Misc-Ultra/">Misc Ultra</a></pre>
 
