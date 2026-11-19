@@ -8,10 +8,10 @@
 ──────────────────
 School  Zhejiang Normal University
 Focus   CTF · Misc
-Tools   Python · Godot
+Tools   Python · Java · Godot 
 Blog    <a href="https://metaviii.github.io/">https://metaviii.github.io/</a>
 Notes   <a href="https://metaviii.github.io/2024/11/Misc-Ultra/">Misc Ultra</a>
-Hobby   Music, Game, Philosophy</pre>
+Hobby   Music, Anime, Philosophy</pre>
 
 <p><img src="assets/palette.svg" width="128" height="18" alt="封面取色"></p>
 
