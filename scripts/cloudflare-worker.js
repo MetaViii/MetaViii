@@ -179,17 +179,18 @@ function fallbackArtUri() {
 
 function renderFrostedCassette(info, dark) {
   const coverUri = info.coverUri || fallbackArtUri();
-  const veilA = dark ? "rgba(13,17,23,0.62)" : "rgba(255,255,255,0.68)";
-  const veilB = dark ? "rgba(13,17,23,0.82)" : "rgba(248,250,252,0.86)";
-  const stripBg = dark ? "rgba(22,27,34,0.64)" : "rgba(255,255,255,0.52)";
-  const windowBg = dark ? "rgba(13,17,23,0.44)" : "rgba(255,255,255,0.56)";
-  const windowInner = dark ? "rgba(13,17,23,0.65)" : "rgba(255,255,255,0.78)";
-  const border = dark ? "rgba(255,255,255,0.16)" : "rgba(31,35,40,0.18)";
-  const innerSheen = dark ? "rgba(255,255,255,0.09)" : "rgba(255,255,255,0.85)";
-  const hairline = dark ? "rgba(255,255,255,0.12)" : "rgba(31,35,40,0.12)";
-  const fgMain = dark ? "#f0f6fc" : "#161b22";
-  const fgMuted = dark ? "#b1bac4" : "#4b5563";
-  const fgSubtle = dark ? "#8b949e" : "#656d76";
+  // Lighter veil + boosted color saturation so album hues genuinely glow through the frosted shell
+  const veilA = dark ? "rgba(13,17,23,0.44)" : "rgba(255,255,255,0.42)";
+  const veilB = dark ? "rgba(13,17,23,0.66)" : "rgba(244,247,250,0.62)";
+  const stripBg = dark ? "rgba(13,17,23,0.48)" : "rgba(255,255,255,0.46)";
+  const windowBg = dark ? "rgba(13,17,23,0.38)" : "rgba(255,255,255,0.48)";
+  const windowInner = dark ? "rgba(13,17,23,0.58)" : "rgba(255,255,255,0.72)";
+  const border = dark ? "rgba(255,255,255,0.22)" : "rgba(31,35,40,0.16)";
+  const innerRim = dark ? "rgba(255,255,255,0.18)" : "rgba(255,255,255,0.92)";
+  const hairline = dark ? "rgba(255,255,255,0.15)" : "rgba(31,35,40,0.14)";
+  const fgMain = dark ? "#f8fafc" : "#111827";
+  const fgMuted = dark ? "#cbd5e1" : "#374151";
+  const fgSubtle = dark ? "#94a3b8" : "#4b5563";
   const accent = dark ? "#e3b341" : "#d97706";
   const spotifyColor = info.playing ? "#1db954" : fgSubtle;
 
@@ -213,8 +214,8 @@ function renderFrostedCassette(info, dark) {
     : "";
 
   const reelSpokes = (cx, cy) =>
-    `<circle cx="${cx}" cy="${cy}" r="14" fill="none" stroke="${fgMuted}" stroke-width="1.1" />` +
-    `<circle cx="${cx}" cy="${cy}" r="6.5" fill="none" stroke="${fgMain}" stroke-width="1.2" />` +
+    `<circle cx="${cx}" cy="${cy}" r="14" fill="none" stroke="${fgMuted}" stroke-width="1.15" />` +
+    `<circle cx="${cx}" cy="${cy}" r="6.5" fill="none" stroke="${fgMain}" stroke-width="1.25" />` +
     `<line x1="${cx}" y1="${cy - 12}" x2="${cx}" y2="${cy - 6.5}" stroke="${fgMain}" stroke-width="1.4" />` +
     `<line x1="${cx}" y1="${cy + 6.5}" x2="${cx}" y2="${cy + 12}" stroke="${fgMain}" stroke-width="1.4" />` +
     `<line x1="${cx - 10.4}" y1="${cy - 6}" x2="${cx - 5.6}" y2="${cy - 3.2}" stroke="${fgMain}" stroke-width="1.4" />` +
@@ -228,14 +229,25 @@ function renderFrostedCassette(info, dark) {
     <clipPath id="cassette-clip"><rect x="0.5" y="0.5" width="829" height="83" rx="8" /></clipPath>
     <clipPath id="tape-thumb"><rect x="14" y="31" width="44" height="44" rx="4" /></clipPath>
     <filter id="cassette-blur" x="-15%" y="-30%" width="130%" height="160%">
-      <feGaussianBlur stdDeviation="26" edgeMode="duplicate" />
+      <feColorMatrix type="saturate" values="1.75" result="vivid" />
+      <feGaussianBlur in="vivid" stdDeviation="18" edgeMode="duplicate" />
     </filter>
-    <linearGradient id="cassette-veil" x1="0" y1="0" x2="1" y2="0.4">
+    <filter id="frost-grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+    </filter>
+    <linearGradient id="cassette-veil" x1="0" y1="0" x2="1" y2="0.45">
       <stop offset="0%" stop-color="${veilA}" />
       <stop offset="100%" stop-color="${veilB}" />
     </linearGradient>
+    <linearGradient id="glass-sheen" x1="0" y1="0" x2="0.85" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="${dark ? 0.14 : 0.62}" />
+      <stop offset="32%" stop-color="#ffffff" stop-opacity="${dark ? 0.03 : 0.14}" />
+      <stop offset="56%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="${dark ? 0.08 : 0.34}" />
+    </linearGradient>
     <filter id="tape-shadow" x="-15%" y="-15%" width="130%" height="135%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="${dark ? 0.36 : 0.14}" />
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="${dark ? 0.42 : 0.18}" />
     </filter>
   </defs>
   <style>
@@ -247,14 +259,20 @@ function renderFrostedCassette(info, dark) {
     ${reelCss}
   </style>
 
+  <!-- Frosted acrylic shell backdrop: vivid blurred cover + frosted veil + diagonal glass sheen + micro-grain -->
   <g clip-path="url(#cassette-clip)">
-    <image x="0" y="0" width="830" height="84" preserveAspectRatio="none" href="${coverUri}" filter="url(#cassette-blur)" opacity="${dark ? 0.82 : 0.72}" />
+    <image x="0" y="0" width="830" height="84" preserveAspectRatio="none" href="${coverUri}" filter="url(#cassette-blur)" opacity="${dark ? 0.92 : 0.88}" />
     <rect width="830" height="84" fill="url(#cassette-veil)" />
+    <rect width="830" height="84" fill="url(#glass-sheen)" />
+    <rect width="830" height="84" filter="url(#frost-grain)" opacity="${dark ? 0.055 : 0.045}" />
+    <!-- Frosted top index strip -->
     <rect x="0" y="0" width="830" height="23" fill="${stripBg}" />
-    <line x1="8" y1="1.5" x2="822" y2="1.5" stroke="${innerSheen}" stroke-width="1" />
+    <line x1="8" y1="1.5" x2="822" y2="1.5" stroke="${innerRim}" stroke-width="1" />
     <line x1="1" y1="23" x2="829" y2="23" stroke="${hairline}" stroke-width="1" />
   </g>
+  <!-- Crisp glass outer edge + subtle inner rim -->
   <rect x="0.5" y="0.5" width="829" height="83" rx="8" fill="none" stroke="${border}" stroke-width="1" />
+  <rect x="1.5" y="1.5" width="827" height="81" rx="7" fill="none" stroke="${innerRim}" stroke-opacity="${dark ? 0.25 : 0.55}" stroke-width="0.8" />
 
   <rect x="14" y="9.5" width="20" height="4" rx="1" fill="${accent}" />
   <text x="42" y="15" class="mono hdr">TYPE II · CHROME · ${statusText}</text>
