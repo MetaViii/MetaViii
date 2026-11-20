@@ -42,7 +42,7 @@ Hobby   Music, Anime, Philosophy</pre>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/now-playing-dark.svg">
-    <img src="assets/now-playing.svg" width="100%" alt="Spotify Now Playing">
+    <source media="(prefers-color-scheme: dark)" srcset="https://metavi-spotify.metavixie.workers.dev/?theme=dark">
+    <img src="https://metavi-spotify.metavixie.workers.dev/?theme=light" width="100%" alt="Spotify Now Playing">
   </picture>
 </p>
