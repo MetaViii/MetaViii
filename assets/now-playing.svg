@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="84" viewBox="0 0 830 84" role="img" aria-label="REC · PLAY: Something In The Way — Nirvana // Nevermind">
+  <title>REC · PLAY: Something In The Way — Nirvana // Nevermind</title>
+  <defs>
+    <clipPath id="cassette-clip"><rect x="0.5" y="0.5" width="829" height="83" rx="8" /></clipPath>
+    <clipPath id="tape-thumb"><rect x="14" y="31" width="44" height="44" rx="4" /></clipPath>
+    <filter id="cassette-blur" x="-15%" y="-30%" width="130%" height="160%">
+      <feGaussianBlur stdDeviation="26" edgeMode="duplicate" />
+    </filter>
+    <linearGradient id="cassette-veil" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.68)" />
+      <stop offset="100%" stop-color="rgba(248,250,252,0.86)" />
+    </linearGradient>
+    <filter id="tape-shadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.14" />
+    </filter>
+  </defs>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; }
+    .hdr { font-size: 9.5px; font-weight: 600; letter-spacing: 1px; fill: #656d76; }
+    .track { font-size: 14px; font-weight: 600; fill: #161b22; }
+    .sub { font-size: 11.5px; fill: #4b5563; }
+    
+    .reel-l { transform-origin: 696px 53px; animation: rspin 5.5s linear infinite; }
+    .reel-r { transform-origin: 766px 53px; animation: rspin 5.5s linear infinite; }
+    @keyframes rspin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  </style>
+
+  <!-- Frosted album-adaptive ambient glass backdrop -->
+  <g clip-path="url(#cassette-clip)">
+    <image x="0" y="0" width="830" height="84" preserveAspectRatio="none" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE3MmEzYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUyJSIgc3RvcC1jb2xvcj0iIzJjNTM2NCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNGEzNzMiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InMiIGN4PSI3MiUiIGN5PSIzMiUiIHI9IjQ4JSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmNmU3Y2IiIHN0b3Atb3BhY2l0eT0iMC43MiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNzJhM2EiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIGZpbGw9InVybCgjZykiLz4KICA8cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgZmlsbD0idXJsKCNzKSIvPgogIDxjaXJjbGUgY3g9IjY0IiBjeT0iNjQiIHI9IjM0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjM1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxjaXJjbGUgY3g9IjY0IiBjeT0iNjQiIHI9IjE4IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjIyIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8cGF0aCBkPSJNMTYgOTYgUTQ4IDc2IDgwIDk0IFQxMjggODYgTDEyOCAxMjggTDAgMTI4IFoiIGZpbGw9IiMwZDFiMmEiIGZpbGwtb3BhY2l0eT0iMC40NSIvPgo8L3N2Zz4=" filter="url(#cassette-blur)" opacity="0.72" />
+    <rect width="830" height="84" fill="url(#cassette-veil)" />
+    <!-- Frosted top index header bar -->
+    <rect x="0" y="0" width="830" height="23" fill="rgba(255,255,255,0.52)" />
+    <line x1="8" y1="1.5" x2="822" y2="1.5" stroke="rgba(255,255,255,0.85)" stroke-width="1" />
+    <line x1="1" y1="23" x2="829" y2="23" stroke="rgba(31,35,40,0.12)" stroke-width="1" />
+  </g>
+  <!-- Crisp outer glass shell border -->
+  <rect x="0.5" y="0.5" width="829" height="83" rx="8" fill="none" stroke="rgba(31,35,40,0.18)" stroke-width="1" />
+
+  <!-- Top index metadata -->
+  <rect x="14" y="9.5" width="20" height="4" rx="1" fill="#d97706" />
+  <text x="42" y="15" class="mono hdr">TYPE II · CHROME · REC · PLAY</text>
+  <text x="790" y="15" text-anchor="end" class="mono hdr">[01:48 / 03:52]</text>
+  <g transform="translate(800 6) scale(0.46)" fill="#1db954"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.503 17.308a.748.748 0 0 1-1.03.249c-2.82-1.723-6.37-2.113-10.551-1.158a.749.749 0 0 1-.334-1.461c4.576-1.046 8.5-.596 11.666 1.34a.75.75 0 0 1 .249 1.03zm1.468-3.266a.937.937 0 0 1-1.288.308c-3.227-1.984-8.148-2.559-11.965-1.4a.938.938 0 0 1-.545-1.795c4.361-1.324 9.781-.683 13.49 1.599a.937.937 0 0 1 .308 1.288zm.126-3.401C15.228 8.344 8.843 8.133 5.15 9.254a1.124 1.124 0 1 1-.653-2.152c4.24-1.287 11.292-1.038 15.744 1.605a1.124 1.124 0 0 1-1.144 1.934z" /></g>
+
+  <!-- Left crisp album cover thumbnail -->
+  <g filter="url(#tape-shadow)">
+    <image x="14" y="31" width="44" height="44" preserveAspectRatio="xMidYMid slice" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE3MmEzYSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUyJSIgc3RvcC1jb2xvcj0iIzJjNTM2NCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkNGEzNzMiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InMiIGN4PSI3MiUiIGN5PSIzMiUiIHI9IjQ4JSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmNmU3Y2IiIHN0b3Atb3BhY2l0eT0iMC43MiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNzJhM2EiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIGZpbGw9InVybCgjZykiLz4KICA8cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgZmlsbD0idXJsKCNzKSIvPgogIDxjaXJjbGUgY3g9IjY0IiBjeT0iNjQiIHI9IjM0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjM1IiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxjaXJjbGUgY3g9IjY0IiBjeT0iNjQiIHI9IjE4IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS1vcGFjaXR5PSIwLjIyIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8cGF0aCBkPSJNMTYgOTYgUTQ4IDc2IDgwIDk0IFQxMjggODYgTDEyOCAxMjggTDAgMTI4IFoiIGZpbGw9IiMwZDFiMmEiIGZpbGwtb3BhY2l0eT0iMC40NSIvPgo8L3N2Zz4=" clip-path="url(#tape-thumb)" />
+    <rect x="14.5" y="31.5" width="43" height="43" rx="3.5" fill="none" stroke="rgba(31,35,40,0.18)" />
+  </g>
+
+  <!-- Track typography with ruled notebook guide line -->
+  <text x="72" y="49" class="sans track">Something In The Way</text>
+  <line x1="72" y1="54.5" x2="626" y2="54.5" stroke="rgba(31,35,40,0.12)" stroke-width="1" stroke-dasharray="2 3" />
+  <text x="72" y="70" class="mono sub">Nirvana // Nevermind</text>
+
+  <!-- Right frosted cassette dual-reel window -->
+  <rect x="652" y="32" width="160" height="42" rx="21" fill="rgba(255,255,255,0.56)" stroke="rgba(31,35,40,0.12)" stroke-width="1" />
+  <rect x="713" y="43" width="36" height="20" rx="2" fill="rgba(255,255,255,0.78)" stroke="rgba(31,35,40,0.12)" stroke-width="0.9" />
+  <line x1="719" y1="53" x2="743" y2="53" stroke="#656d76" stroke-width="1" stroke-dasharray="3 2" />
+  <g class="reel-l"><circle cx="696" cy="53" r="14" fill="none" stroke="#4b5563" stroke-width="1.1" />
+    <circle cx="696" cy="53" r="6.5" fill="none" stroke="#161b22" stroke-width="1.2" />
+    <line x1="696" y1="41" x2="696" y2="46.5" stroke="#161b22" stroke-width="1.4" />
+    <line x1="696" y1="59.5" x2="696" y2="65" stroke="#161b22" stroke-width="1.4" />
+    <line x1="685.6" y1="47" x2="690.4" y2="49.8" stroke="#161b22" stroke-width="1.4" />
+    <line x1="701.6" y1="56.2" x2="706.4" y2="59" stroke="#161b22" stroke-width="1.4" />
+    <line x1="706.4" y1="47" x2="701.6" y2="49.8" stroke="#161b22" stroke-width="1.4" />
+    <line x1="690.4" y1="56.2" x2="685.6" y2="59" stroke="#161b22" stroke-width="1.4" /></g>
+  <g class="reel-r"><circle cx="766" cy="53" r="14" fill="none" stroke="#4b5563" stroke-width="1.1" />
+    <circle cx="766" cy="53" r="6.5" fill="none" stroke="#161b22" stroke-width="1.2" />
+    <line x1="766" y1="41" x2="766" y2="46.5" stroke="#161b22" stroke-width="1.4" />
+    <line x1="766" y1="59.5" x2="766" y2="65" stroke="#161b22" stroke-width="1.4" />
+    <line x1="755.6" y1="47" x2="760.4" y2="49.8" stroke="#161b22" stroke-width="1.4" />
+    <line x1="771.6" y1="56.2" x2="776.4" y2="59" stroke="#161b22" stroke-width="1.4" />
+    <line x1="776.4" y1="47" x2="771.6" y2="49.8" stroke="#161b22" stroke-width="1.4" />
+    <line x1="760.4" y1="56.2" x2="755.6" y2="59" stroke="#161b22" stroke-width="1.4" /></g>
+</svg>

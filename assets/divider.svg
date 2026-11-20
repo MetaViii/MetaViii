@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="822" height="28" viewBox="0 0 822 28">
-  <style>:root{color:#000;--paper:#fff}@media(prefers-color-scheme:dark){:root{color:#b8b8b8;--paper:#0d1117}}</style>
-  <g transform="translate(6 14)" fill="none" stroke="currentColor">
+  <g transform="translate(6 14)" fill="none" stroke="#1f2328">
     <path d="M0 6h17v-12h42l6 6h614m11 0h119" stroke-width="1.4" />
     <path d="M12 -9v20m-8-10h17m53-5h18m-18 3h8" stroke-width="1" />
-    <g fill="var(--paper)" stroke-width="1.4">
+    <g fill="#ffffff" stroke-width="1.4">
       <rect x="709" y="-3" width="17" height="6" rx="1" />
       <circle cx="748" cy="0" r="3" />
       <rect x="770" y="-3" width="17" height="6" rx="1" />

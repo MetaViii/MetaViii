@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="40" viewBox="0 0 830 40" role="img" aria-label="> Hi, here is metavi">
+  <title>&gt; Hi, here is metavi</title>
+  <style>
+    .text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 13.5px;
+    }
+    .tag {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 11px;
+    }
+  </style>
+  <rect x="0.5" y="0.5" width="829" height="39" rx="6" fill="#f6f8fa" stroke="#d0d7de" />
+  <text x="16" y="24.5" class="text">
+    <tspan fill="#656d76" font-weight="600">&gt;</tspan>
+    <tspan fill="#1f2328" dx="4">Hi, here is metavi</tspan>
+  </text>
+  <text x="814" y="24" text-anchor="end" class="tag" fill="#8c959f">zsh</text>
+</svg>
