@@ -24,6 +24,7 @@ Hobby   Music, Anime, Philosophy</pre>
   <a href="https://github.com/MetaViii/MetaAWD"><img src="assets/badge-python.svg" alt="Python" height="20"></a>
   <a href="https://github.com/MetaViii/campus-trade-lostfound"><img src="assets/badge-java.svg" alt="Java" height="20"></a>
   <a href="https://github.com/MetaViii/little-hunter"><img src="assets/badge-gdscript.svg" alt="GDScript" height="20"></a>
+  <a href="https://github.com/MetaViii/dsh-ctf-teams"><img src="assets/badge-vibecoding.svg" alt="VibeCoding" height="20"></a>
 </p>
 
 <p align="center">
